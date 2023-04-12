@@ -4,6 +4,8 @@ import {ExampleOne} from "./components/redux/ExampleOne";
 import { ExampleSecond } from "./components/redux/ExampleSecond";
 import { InputRef } from "./components/refs/InputRef";
 import { Counter } from "./components/state/Counter";
+import { ChangeTitle } from "./components/state/ChangeTitle";
+
 
 function App() {
   return (
@@ -15,6 +17,9 @@ function App() {
           console.log('Button clicked', event, id)
         }}
       /> 
+
+      <h1>Ví dụ về useEffect</h1>
+      <ChangeTitle />
 
       <h1>Ví dụ useRef</h1>
       <InputRef />
